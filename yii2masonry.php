@@ -82,7 +82,7 @@ class yii2masonry extends Widget
         $options = Json::encode($this->clientOptions);
         $js[] = "var mscontainer$id = $('#$id');";
         $js[] = "var msnry$id = mscontainer$id.masonry($options);";
-        $js[] = "msnry$id.imagesLoaded(function(){  msnry$id.masonry(); });";
+        $js[] = "msnry$id.imagesLoaded(function(){  msnry$id.masonry('layout'); });";
 
         $view->registerJs(implode("\n", $js),View::POS_READY);
     }
