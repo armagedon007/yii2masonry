@@ -24,20 +24,6 @@ Get it via [composer](http://getcomposer.org/) by adding the package to your `co
 }
 ```
 
-And ensure, that you have the follwing plugin installed global:
-
-> php composer.phar global require "fxp/composer-asset-plugin:~1.0"
-
-Due to limitations of `fxp/composer-asset-plugin` you also need to add the following section to the `"extra"` section of your `composer.json`
-
-    "asset-repositories": [
-      {
-        "name": "bower-asset/eventemitter",
-        "type": "bower-vcs",
-        "url": "git://github.com/Wolfy87/EventEmitter.git"
-      }
-    ]
-
 You may also check the package information on [packagist](https://packagist.org/packages/philippfrenzel/yii2masonry).
 
 
